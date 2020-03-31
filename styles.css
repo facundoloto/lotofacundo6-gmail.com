@@ -4,15 +4,21 @@ padding:0;
 margin:0; /*inicializar en 0 el body*/
 }
 :root{
---fuente: "Merriweather", serif;
+--fuente:'Press Start 2P', cursive;
 --tamaño:15px;
 }
 body{
-background-image:url("imagenes-inicio/double-bubble.png");
+background-image:url("imagenes-inicio/1920x1080-px-8-bit-cave-story-clouds-dragon-Moon-684819-wallhere.com.jpg");
+background-repeat:cover;
+background-attachment: fixed;
+color: #f5f5dc;
 }
 .contenedor{
-background-image:url("imagenes-inicio/double-bubble-dark.png");
-color:rgb(224, 224, 224);
+background-image:url("imagenes-inicio/illustration-digital-art-video-games-monochrome-pixel-art-minimalism-259864-wallhere.com.jpg");
+background-repeat: no-repeat;
+background-size:100%;
+
+/*color:rgb(255, 255, 255);*/
 width:100%; /* el ancho lo mas que pueda*/
 height:100vh; /*vh es viewport height el alto total de la pantalla*/
 }
@@ -25,37 +31,19 @@ margin-right:auto;
 .profile img{
 margin-right:10px;
 margin-left:30%;
-margin-top:200px;
-margin-bottom:50px;
+margin-top:10px;
+margin-bottom:10px;
 }
 
 .profile ul{ /*lista de perfil*/
-margin-left:30%;
-list-style:url("imagenes-inicio/icon.png");
+margin-left:20%;
+list-style-image:url("imagenes-inicio/icons8-space-fighter-16.png"); /*icono a una lista*/
 font-family:var(--fuente);
 font-size: var(--tamaño);
-filter: opacity(0.7);
-}
-.profile ul li{
-margin-bottom:30px;
-}
-.menu{
-position: absolute;
-right:1%; /*posicionar en cualquier lado una caja*/
 
 }
-.menu ul{
-list-style: none;
-}
-.menu ul li{
-display:inline-block;
-font-family:'Patrick Hand', cursive;
-font-size:25px;
-padding-left:40px;
-}
-.menu ul li:hover{
-font-size:30px;
-transition:0.5s;
+.profile ul li{
+margin-bottom:15px;
 }
 .profile img{
 width:200px;
@@ -65,50 +53,81 @@ border-radius:50%;
 .profile h1{
 text-align: center;
 font-family:var(--fuente);
-font-size:2em;
-filter: opacity(0.7);
+font-size:1.5em;
+margin-top:20px;
+margin-left:10px;
 }
 .redes img{
 margin-left: 20px;
-filter:opacity(.8);
+filter:opacity(.5);
 }
 .redes{
 margin-top:-50px;
 position:fixed;
 }
 .redes img:hover{
-transition: 0.8s;
+transition: 0.9s;
 filter:opacity(100%);
 }
+hr{
+color:beige;
+}
+.menu{
+right:1%; /*posicionar en cualquier lado una caja*/
+}
+.menu a{
+color:beige;
+text-decoration:none;
+}
+.menu ul li{
+display:inline-block;
+font-family:var(--fuente);
+font-size:13px;
+padding-left:20px;
+list-style-image: url("imagenes-inicio/icon-list.png");
+}
+
+    
+.menu ul li:hover{
+background-color: beige;
+border-radius:10px;
+color:black;
+transition:0.5s;
+}
+
+    
+
 .content-box{
 width:60%;
 margin-right: auto;
 margin-left: auto;
-margin-bottom:50px;
+margin-bottom:80px;
 }
 .content-box h2{
 text-align: center;
-font-family:'Patrick Hand', cursive;
+font-family:var(--fuente);
 font-size:2em;
 margin-top:100px;
 margin-bottom:50px;
 }
 .content-box p{
-box-shadow:0 2px 5px 2px rgb(0,0,0,.4);
-font-family:'Comic Neue', cursive;;
-font-size: x-large;
+font-family:var(--fuente);
+font-size:large;
 padding:50px;
 }
- a{
-text-decoration: none;
-}
+
 .skills{
-    text-align: center;
-    font-family:'Patrick Hand', cursive;
-    font-size:2em;
-    margin-top:100px;
-    margin-bottom:50px;
+text-align: center;
+font-family:var(--fuente);
+font-size:1em;
 }
+.skills hr{
+    margin-right:40%;
+    margin-left:40%; 
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
 .skills ul li{
 display: inline-block;
 margin-left:40px;
@@ -117,4 +136,42 @@ margin-left:40px;
 width:100px;
 height:100px;
 filter:opacity(.8);
+}
+
+.contactarme{
+width:60%;
+margin-right: auto;
+margin-left: auto;
+margin-bottom:50px;
+}
+.contactarme h2{
+    text-align: center;
+    font-family:var(--fuente);
+    font-size:2em;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.contactarme p{
+    font-family:var(--fuente);
+    font-size:large;
+    padding:50px;
+}
+ul {
+list-style:none;
+}
+.contacto img{
+width:50px;
+height:50px;
+}
+.contacto{
+text-align:center;
+}
+.contacto li{
+display:inline-block;
+margin-left:50px;
+filter: opacity(0.7);
+}
+.contacto li:hover{
+transition: 0.8s;
+filter: opacity(1);
 }
